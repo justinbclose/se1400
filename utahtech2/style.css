@@ -12,3 +12,12 @@ header h1 {
     line-height: 140%;
     padding: .5rem;
 }
+nav {
+    font-weight: bold;
+    background-color: #F3F3F3;
+}
+
+h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+}
