@@ -83,9 +83,17 @@ main {
 }
 
 #studenthero {
+    width: 100%;
+    height: 300px;
     background-image: url('studenthero.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #facultyhero {
+    width: 100%;
+    height: 300px;
     background-image: url('facultyhero.jpg');
+    background-size: cover;
+    background-position: center;
 }
