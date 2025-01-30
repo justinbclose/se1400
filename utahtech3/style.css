@@ -21,6 +21,15 @@ header h1 {
     padding-left: 1em;
     margin-bottom: 0;
 }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+}
 
 nav {
     font-weight: bold;
