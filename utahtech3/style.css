@@ -88,6 +88,9 @@ main {
     background-image: url('studenthero.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #facultyhero {
