@@ -11,16 +11,6 @@ header {
     font-family: Georgia, serif;
 }
 
-header h1 {
-    line-height: 140%;
-    padding: .5rem;
-    background-image: url('utahtechlogo.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    padding-left: 1em;
-    margin-bottom: 0;
-}
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -101,6 +91,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 #facultyhero {
     width: 100%;
     height: 400px;
@@ -110,4 +101,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#studentsimg {
+    margin-top: 20px; 
 }
