@@ -16,6 +16,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-image: url('utahtechlogo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 .logo {
