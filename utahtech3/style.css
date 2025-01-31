@@ -9,7 +9,6 @@ header {
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
-    padding: 2rem 1rem;
 }
 
 header-content {
@@ -23,7 +22,7 @@ header-content {
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 100px;
 }
 
 nav {
