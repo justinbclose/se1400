@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('homehero.jpg');
+    background-image: url('utahtechlogo.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -93,39 +93,10 @@ main {
     background-image: url('homehero.jpg');
 }
 
-#homethero {
-    width: 100%;
-    height: 400px;
-    background-image: url('homehero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #studenthero {
-    width: 100%;
-    height: 400px;
     background-image: url('studenthero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #facultyhero {
-    width: 100%;
-    height: 400px;
     background-image: url('facultyhero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#studentsimg {
-    margin-top: 20px; 
 }
