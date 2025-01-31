@@ -9,9 +9,11 @@ header {
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
+    padding: 2rem 1rem; /* Increase padding to make the header bigger */
+    margin-bottom: 0;   /* Remove space between nav and header */
 }
 
-header-content {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +21,12 @@ header-content {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    padding-left: 1em;
+    background-origin: content-box;
+}
+
+h1 {
+    margin-bottom: 0;
 }
 
 .logo {
