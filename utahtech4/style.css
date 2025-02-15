@@ -64,13 +64,37 @@ header h1 {
 nav {
     grid-row: 2 / 3;
     grid-column: 2 / -2;
-    font-weight: bold;
-    background-color: #F3F3F3;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    background-color: #424242;
+    position: sticky;
+    top: 0;
 }
 
+/* Nav ul */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+/* Nav ul li */
+nav ul li {
+    width: 100%;
+}
+
+/* Nav a */
 nav a {
+    color: #FFFFFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
     text-decoration: none;
+}
+
+/* Nav a:hover */
+nav a:hover {
+    background-color: #BA1C21;
 }
 
 /* Homehero, Studenthero, Facultyhero */
