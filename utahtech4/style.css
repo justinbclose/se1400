@@ -16,7 +16,7 @@ body {
     grid-template-columns: minmax(0.5px, .25fr) repeat(6, minmax(0, 800px)) minmax(0px, 0.5fr);
     width: 90%;
     min-width: 960px;
-    max-width: 2048px;
+    max-width: 4000px;
     margin-right: auto;
     margin-left: auto;
     background-color: #ffffff;
