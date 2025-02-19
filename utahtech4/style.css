@@ -13,7 +13,7 @@ body {
 #wrapper {
     display: grid;
     grid-auto-rows: minmax(0px, auto);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 200px)) minmax(0px, 0.5fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 800px)) minmax(0px, 0.5fr);
     width: 90%;
     min-width: 960px;
     max-width: 2048px;
