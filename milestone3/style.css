@@ -9,7 +9,7 @@ body {
 .wrapper {
     border: 1px solid #ccc;
     padding: 10px;
-    height: 100px; /* Temporary height to visualize the grid */
+    height: 100px; 
 }
 
 .wrapper:nth-child(1) {
