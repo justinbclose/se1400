@@ -49,10 +49,10 @@ body {
     background-color: rgba(139, 69, 19, 0.2);
 }
 .wrapper:nth-child(13) {
-    background-color: rgba(192, 192, 192, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .wrapper:nth-child(14) {
-    background-color: rgba(64, 64, 64, 0.2);
+    background-color: rgba(0, 0, 0, 0.22);
 }
 .wrapper:nth-child(15) {
     background-color: rgba(0, 0, 0, 0.2);
