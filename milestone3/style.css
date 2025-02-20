@@ -1,1 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
 
+.wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
