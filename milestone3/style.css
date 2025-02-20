@@ -40,13 +40,13 @@ body {
     background-color: rgba(0, 0, 128, 0.2);
 }
 .wrapper:nth-child(10) {
-    background-color: rgba(128, 128, 0, 0.2);
+    background-color: rgba(139, 69, 19, 0.2);
 }
 .wrapper:nth-child(11) {
-    background-color: rgba(0, 128, 128, 0.2);
+    background-color: rgba(139, 69, 19, 0.2);
 }
 .wrapper:nth-child(12) {
-    background-color: rgba(128, 0, 128, 0.2);
+    background-color: rgba(139, 69, 19, 0.2);
 }
 .wrapper:nth-child(13) {
     background-color: rgba(192, 192, 192, 0.2);
