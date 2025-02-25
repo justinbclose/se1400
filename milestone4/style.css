@@ -43,4 +43,7 @@ main {
 .grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
-.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); }
+.grid-item:nth-child(13) { 
+  background-color: rgba(0, 0, 0, 0.2); 
+  flex: 0 0 100%; /* Make the 13th item span the whole width */
+}
