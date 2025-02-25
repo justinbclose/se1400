@@ -3,66 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage Grid Layout</title>
+  <title>3x5 Grid Layout</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
+    }
+    main {
       display: grid;
-      grid-template-rows: auto 1fr auto;
-      grid-template-columns: 1fr 4fr 1fr;
-      grid-template-areas: 
-        "header header header"
-        "left content right"
-        "sub-footer sub-footer sub-footer"
-        "footer footer footer";
-      height: 100vh;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      width: 80%;
+      max-width: 800px;
     }
-    .header {
-      grid-area: header;
-      background: lightgreen;
-      padding: 10px;
+    .grid-item {
+      background-color: lightblue;
+      padding: 20px;
       text-align: center;
-    }
-    .sidebar.left {
-      grid-area: left;
-      background: lightgray;
-      padding: 10px;
-    }
-    .content {
-      grid-area: content;
-      background: lightyellow;
-      padding: 10px;
-    }
-    .sidebar.right {
-      grid-area: right;
-      background: lightgray;
-      padding: 10px;
-    }
-    .sub-footer {
-      grid-area: sub-footer;
-      background: lightpink;
-      padding: 10px;
-      text-align: center;
-    }
-    .footer {
-      grid-area: footer;
-      background: gray;
-      padding: 10px;
-      text-align: center;
+      border: 1px solid #000;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">Header</header>
-    <nav class="sidebar left">Left Sidebar</nav>
-    <main class="content">Main Content</main>
-    <aside class="sidebar right">Right Sidebar</aside>
-    <section class="sub-footer">Sub Footer</section>
-    <footer class="footer">Footer</footer>
-  </div>
+  <main>
+    <section class="grid-item">Content 1</section>
+    <section class="grid-item">Content 2</section>
+    <section class="grid-item">Content 3</section>
+    <section class="grid-item">Content 4</section>
+    <section class="grid-item">Content 5</section>
+    <section class="grid-item">Content 6</section>
+    <section class="grid-item">Content 7</section>
+    <section class="grid-item">Content 8</section>
+    <section class="grid-item">Content 9</section>
+    <section class="grid-item">Content 10</section>
+    <section class="grid-item">Content 11</section>
+    <section class="grid-item">Content 12</section>
+    <section class="grid-item">Content 13</section>
+    <section class="grid-item">Content 14</section>
+    <section class="grid-item">Content 15</section>
+  </main>
 </body>
 </html>
 
