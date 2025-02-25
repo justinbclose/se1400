@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  gap: 10px;
+  gap: 0px;
   height: 100vh;
   margin: 0;
 }
@@ -10,14 +10,14 @@ main {
   grid-column: 2 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px;
+  gap: 0px;
+  padding: 0px;
 }
 
 .grid-item {
   border: 1px solid #ccc;
   padding: 0px;
-  height: 0px; 
+  height: 100%; 
 }
 
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
