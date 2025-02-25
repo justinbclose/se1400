@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>3x5 Grid Layout</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
     main {
       display: grid;
@@ -21,7 +21,23 @@
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.3);
     }
-    </style>
+    
+    .grid-item:nth-child(1)  { background-color: rgba(255, 0, 0, 0.3); }
+    .grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.3); }
+    .grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.3); }
+    .grid-item:nth-child(4)  { background-color: rgba(255, 255, 0, 0.3); }
+    .grid-item:nth-child(5)  { background-color: rgba(0, 255, 255, 0.3); }
+    .grid-item:nth-child(6)  { background-color: rgba(255, 0, 255, 0.3); }
+    .grid-item:nth-child(7)  { background-color: rgba(128, 0, 0, 0.3); }
+    .grid-item:nth-child(8)  { background-color: rgba(0, 128, 0, 0.3); }
+    .grid-item:nth-child(9)  { background-color: rgba(0, 0, 128, 0.3); }
+    .grid-item:nth-child(10) { background-color: rgba(128, 128, 0, 0.3); }
+    .grid-item:nth-child(11) { background-color: rgba(0, 128, 128, 0.3); }
+    .grid-item:nth-child(12) { background-color: rgba(128, 0, 128, 0.3); }
+    .grid-item:nth-child(13) { background-color: rgba(64, 64, 64, 0.3); }
+    .grid-item:nth-child(14) { background-color: rgba(192, 192, 192, 0.3); }
+    .grid-item:nth-child(15) { background-color: rgba(255, 165, 0, 0.3); }
+  </style>
 </head>
 <body>
   <main>
@@ -37,9 +53,4 @@
     <section class="grid-item">Content 10</section>
     <section class="grid-item">Content 11</section>
     <section class="grid-item">Content 12</section>
-    <section class="grid-item">Content 13</section>
-    <section class="grid-item">Content 14</section>
-    <section class="grid-item">Content 15</section>
-  </main>
-</body>
-</html>
+    <section class="grid-item">Content 13</section
