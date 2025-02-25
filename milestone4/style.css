@@ -9,7 +9,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
@@ -20,8 +20,9 @@ main {
 .grid-item {
   border: 1px solid #ccc;
   padding: 0px;
-  flex: 1 0 175px; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 175px */
+  flex: 1 0 30%; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 30% */
   height: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
 }
 
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
