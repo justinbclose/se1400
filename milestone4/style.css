@@ -1,24 +1,27 @@
 body {
-  display: grid;
-  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
 }
 
 main {
-  grid-column: 2 / span 6;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0; 
-  padding: 0; 
-  height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
 }
 
 .grid-item {
   border: 1px solid #ccc;
   padding: 0px;
-  height: 100%; 
+  flex: 1 0 175px; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 175px */
+  height: 100%;
 }
 
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
@@ -34,5 +37,5 @@ main {
 .grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); }
-.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.2); }
+.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); }
 .grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); }
