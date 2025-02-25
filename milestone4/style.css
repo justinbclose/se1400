@@ -6,40 +6,55 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
   display: grid;
-  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  gap: 0px;
-  height: 100vh;
-  margin: 0;
-}
-
-main {
-  grid-column: 2 / span 6;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  padding: 0;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: 
+    "header header header"
+    "left content right"
+    "sub-footer sub-footer sub-footer"
+    "footer footer footer";
   height: 100vh;
 }
 
-.grid-item {
-  border: 1px solid #ccc;
-  padding: 0px;
-  height: 100%;
+.header {
+  grid-area: header;
+  background: lightgreen;
+  padding: 20px;
+  text-align: center;
 }
 
-.grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
-.grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
-.grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
-.grid-item:nth-child(4)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(5)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(6)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(7)  { background-color: rgba(255, 255, 255, 0.2); }
-.grid-item:nth-child(8)  { background-color: rgba(255, 255, 0, 0.2); }
-.grid-item:nth-child(9)  { background-color: rgba(255, 255, 255, 0.2); }
-.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
-.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
-.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
-.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); }
-.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); }
-.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); }
+.sidebar.left {
+  grid-area: left;
+  background: lightgray;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  background: lightyellow;
+  padding: 20px;
+}
+
+.sidebar.right {
+  grid-area: right;
+  background: lightgray;
+  padding: 20px;
+}
+
+.sub-footer {
+  grid-area: sub-footer;
+  background: lightpink;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  background: gray;
+  padding: 15px;
+  text-align: center;
+}
+
+}
