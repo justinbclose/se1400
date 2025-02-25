@@ -1,15 +1,16 @@
 body {
-    display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-    gap: 10px;
-    height: 100vh;
-    margin: 0;
+  display: grid;
+  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  gap: 10px;
+  height: 100vh;
+  margin: 0;
 }
 
 #wrapper {
-    grid-column: 1 / -1;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+  grid-column: 2 / span 6;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+  padding: 10px;
 }
 
 .wrapper:nth-child(1) {
