@@ -36,15 +36,15 @@ main {
 }
 .grid-item:nth-child(4)  { 
   background-color: rgba(255, 105, 180, 0.5); 
-  flex: 1 1 45%; /* Make the 4th item bigger */
+  flex: 1 1 30%; /* Make the 4th item bigger */
 }
 .grid-item:nth-child(5)  { 
   background-color: rgba(255, 105, 180, 0.5); 
-  flex: 1 1 45%; /* Make the 5th item bigger */
+  flex: 1 1 30%; /* Make the 5th item bigger */
 }
 .grid-item:nth-child(6)  { 
   background-color: rgba(255, 105, 180, 0.5); 
-  flex: 1 1 45%; /* Make the 6th item bigger */
+  flex: 1 1 30%; /* Make the 6th item bigger */
 }
 .grid-item:nth-child(7)  { background-color: rgba(255, 255, 255, 0.2); }
 .grid-item:nth-child(8)  { background-color: rgba(255, 255, 0, 0.2); }
