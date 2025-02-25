@@ -10,58 +10,28 @@ main {
   grid-column: 2 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
+  gap: 10px;
   padding: 10px;
 }
 
 .grid-item {
   border: 1px solid #ccc;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 100px;
+  height: 100px; 
 }
-.wrapper:nth-child(1) {
-    background-color: rgba(0, 0, 225, 0.2), rgba(128, 0, 128, 0.2);
-}
-.wrapper:nth-child(2) {
-    background-color: rgba(0, 255, 0, 0.2);
-}
-.wrapper:nth-child(3) {
-    background-color: (0, 0, 255, 0.2), rgba(128, 0, 128, 0.2);
-}
-.wrapper:nth-child(4) {
-    background-color: rgba(255, 105, 180, 0.5);
-}
-.wrapper:nth-child(5) {
-    background-color: rgba(255, 105, 180, 0.5);
-}
-.wrapper:nth-child(6) {
-    background-color: rgba(255, 105, 180, 0.5);
-}
-.wrapper:nth-child(7) {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.wrapper:nth-child(8) {
-    background-color: rgba(255, 255, 0, 0.2);
-}
-.wrapper:nth-child(9) {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.wrapper:nth-child(10) {
-    background-color: rgba(139, 69, 19, 0.2);
-}
-.wrapper:nth-child(11) {
-    background-color: rgba(139, 69, 19, 0.2);
-}
-.wrapper:nth-child(12) {
-    background-color: rgba(139, 69, 19, 0.2);
-}
-.wrapper:nth-child(13) {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-.wrapper:nth-child(14) {
-    background-color: rgba(0, 0, 0, 0.22);
-}
-.wrapper:nth-child(15) {
-    background-color: rgba(0, 0, 0, 0.2);
-}
+
+.grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
+.grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
+.grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
+.grid-item:nth-child(4)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(5)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(6)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(7)  { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(8)  { background-color: rgba(255, 255, 0, 0.2); }
+.grid-item:nth-child(9)  { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); }
+.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); }
+.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); }
