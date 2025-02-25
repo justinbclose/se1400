@@ -35,7 +35,11 @@ main {
 }
 
 .grid-item:nth-child(1) { background-color: rgba(0, 0, 225, 0.2); }
-.grid-item:nth-child(2) { background-color: rgba(0, 255, 0, 0.2); }
+.grid-item:nth-child(2) {
+  grid-column: span 2; /* Make grid item 2 span two columns */
+  background-color: rgba(0, 255, 0, 0.2); /* Keep the existing background color */
+  height: 100px; /* Keep the existing height */
+}
 .grid-item:nth-child(3) { background-color: rgba(0, 0, 255, 0.2); }
 .grid-item:nth-child(4) { background-color: rgba(255, 105, 180, 0.5); }
 .grid-item:nth-child(5) { background-color: rgba(255, 105, 180, 0.5); }
