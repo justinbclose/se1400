@@ -1,10 +1,16 @@
-main {
+body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 0px;
+  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  gap: 10px;
   height: 100vh;
   margin: 0;
+}
+
+main {
+  grid-column: 2 / span 6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
   padding: 10px;
 }
 
@@ -12,8 +18,8 @@ main {
   border: 1px solid #ccc;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.3);
+  height: 100px;
 }
-
 .wrapper:nth-child(1) {
     background-color: rgba(0, 0, 225, 0.2), rgba(128, 0, 128, 0.2);
 }
