@@ -1,74 +1,58 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+/* Reset default margin and padding */
+* {
   margin: 0;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 0.5fr 2fr 3fr 0.5fr 0.5fr;
-  gap: 0px;
-  width: 100vw;
-  height: 100vh;
-}
-
-.grid-item {
-  border: 1px solid #ccc;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Define specific row heights and background colors */
-.grid-item:nth-child(1),
-.grid-item:nth-child(3),
-.grid-item:nth-child(13),
-.grid-item:nth-child(15) {
-  background-color: rgba(128, 128, 128, 0.5);
-  height: 50px;
+body {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: 
+    "header header header"
+    "left content right"
+    "sub-footer sub-footer sub-footer"
+    "footer footer footer";
+  height: 100vh;
 }
 
-.grid-item:nth-child(2) {
-  background-color: rgba(0, 128, 0, 0.3);
-  grid-column: span 3;
-  height: 50px;
+.header {
+  grid-area: header;
+  background: lightgreen;
+  padding: 20px;
+  text-align: center;
 }
 
-.grid-item:nth-child(4),
-.grid-item:nth-child(6) {
-  background-color: rgba(255, 192, 203, 0.3);
-  grid-column: span 1;
-  height: 200px;
+.sidebar.left {
+  grid-area: left;
+  background: lightgray;
+  padding: 20px;
 }
 
-.grid-item:nth-child(5) {
-  background-color: rgba(255, 255, 0, 0.3);
-  grid-column: span 3;
-  height: 400px;
+.content {
+  grid-area: content;
+  background: lightyellow;
+  padding: 20px;
 }
 
-.grid-item:nth-child(7),
-.grid-item:nth-child(9) {
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 100px;
+.sidebar.right {
+  grid-area: right;
+  background: lightgray;
+  padding: 20px;
 }
 
-.grid-item:nth-child(8) {
-  background-color: rgba(255, 255, 0, 0.2);
-  height: 100px;
+.sub-footer {
+  grid-area: sub-footer;
+  background: lightpink;
+  padding: 15px;
+  text-align: center;
 }
 
-.grid-item:nth-child(10),
-.grid-item:nth-child(11),
-.grid-item:nth-child(12) {
-  background-color: rgba(139, 69, 19, 0.2);
-  height: 50px;
-}
-
-.grid-item:nth-child(14) {
-  background-color: rgba(255, 192, 203, 0.3);
-  grid-column: span 3;
-  height: 100px;
+.footer {
+  grid-area: footer;
+  background: gray;
+  padding: 15px;
+  text-align: center;
 }
