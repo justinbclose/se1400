@@ -26,7 +26,7 @@ main {
 .grid-item:nth-child(1),
 .grid-item:nth-child(2),
 .grid-item:nth-child(3) {
-  height: 50px; /* Adjust the height as needed */
+  height: 10px; /* Adjust the height as needed */
 }
 
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
