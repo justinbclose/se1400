@@ -22,6 +22,13 @@ main {
   box-sizing: border-box; /* Ensures padding and border are included in the width/height */
 }
 
+/* Specific styles to make the first three items smaller */
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+  height: 50px; /* Adjust the height as needed */
+}
+
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
 .grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
 .grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
