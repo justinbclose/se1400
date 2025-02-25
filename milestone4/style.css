@@ -36,4 +36,9 @@ main {
 .grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
-.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); flex: 3 0 525px; /* Merge 13th, 14th, and 15th */ }
+.grid-item:nth-child(13) {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 3 0 525px; /* Adjust flex-basis to match the combined length of other elements */
+  align-self: center; /* Center the item */
+  width: 100%; /* Extend the length */
+}
