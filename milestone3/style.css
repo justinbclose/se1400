@@ -10,8 +10,9 @@ main {
   grid-column: 2 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  padding: 0px;
+  gap: 0; 
+  padding: 0; 
+  height: 100vh; 
 }
 
 .grid-item {
