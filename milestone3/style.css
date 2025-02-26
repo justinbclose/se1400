@@ -34,3 +34,18 @@ footer {
   padding: 10px;
   text-align: center;
 }
+.grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
+.grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
+.grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
+.grid-item:nth-child(4)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(5)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(6)  { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(7)  { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(8)  { background-color: rgba(255, 255, 0, 0.2); }
+.grid-item:nth-child(9)  { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
+.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); }
+.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); }
+.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); }
