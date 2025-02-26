@@ -1,20 +1,25 @@
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  grid-template-rows: auto 1fr auto; /* Added rows for header, main, and footer */
+  grid-template-areas: 
+    "header header header header header header header header"
+    ". main main main main main main ."
+    "footer footer footer footer footer footer footer footer";
   gap: 0px;
   height: 100vh;
   margin: 0;
 }
 
 header {
-  grid-column: 2 / span 6;
+  grid-area: header;
   background-color: #4CAF50; /* Add your desired color */
   padding: 10px;
   text-align: center;
 }
 
 main {
-  grid-column: 2 / span 6;
+  grid-area: main;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0; 
@@ -24,7 +29,7 @@ main {
 }
 
 footer {
-  grid-column: 2 / span 6;
+  grid-area: footer;
   background-color: #4CAF50; /* Add your desired color */
   padding: 10px;
   text-align: center;
