@@ -34,6 +34,7 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
 .grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
 .grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
 .grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
