@@ -1,49 +1,44 @@
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  grid-template-rows: auto 1fr auto; /* Added rows for header, main, and footer */
-  grid-template-areas: 
-    "header header header header header header header header"
-    ". main main main main main main ."
-    "footer footer footer footer footer footer footer footer";
   gap: 0px;
   height: 100vh;
   margin: 0;
 }
 
 header {
-  grid-area: header;
-  background-color: #4CAF50; /* Add your desired color */
+  grid-column: 2 / span 6;
+  background-color: #4CAF50; /* Header color */
   padding: 10px;
   text-align: center;
 }
 
 main {
-  grid-area: main;
+  grid-column: 2 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0; 
+  gap: 10px; 
   padding: 0; 
   height: 100vh; 
-  background-color: #FFFFFF; /* Add your desired color */
+  background-color: #FFFFFF; /* Main area color */
 }
 
 footer {
-  grid-area: footer;
-  background-color: #4CAF50; /* Add your desired color */
+  grid-column: 2 / span 6;
+  background-color: #4CAF50; /* Footer color */
   padding: 10px;
   text-align: center;
 }
 
-.grid-item:nth-child(1)  { background-color: rgba(0, 0, 225, 0.2); }
-.grid-item:nth-child(2)  { background-color: rgba(0, 255, 0, 0.2); }
-.grid-item:nth-child(3)  { background-color: rgba(0, 0, 255, 0.2); }
-.grid-item:nth-child(4)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(5)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(6)  { background-color: rgba(255, 105, 180, 0.5); }
-.grid-item:nth-child(7)  { background-color: rgba(255, 255, 255, 0.2); }
-.grid-item:nth-child(8)  { background-color: rgba(255, 255, 0, 0.2); }
-.grid-item:nth-child(9)  { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(1) { background-color: rgba(0, 0, 255, 0.2); }
+.grid-item:nth-child(2) { background-color: rgba(0, 255, 0, 0.2); }
+.grid-item:nth-child(3) { background-color: rgba(0, 0, 255, 0.2); }
+.grid-item:nth-child(4) { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(5) { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(6) { background-color: rgba(255, 105, 180, 0.5); }
+.grid-item:nth-child(7) { background-color: rgba(255, 255, 255, 0.2); }
+.grid-item:nth-child(8) { background-color: rgba(255, 255, 0, 0.2); }
+.grid-item:nth-child(9) { background-color: rgba(255, 255, 255, 0.2); }
 .grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); }
 .grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); }
