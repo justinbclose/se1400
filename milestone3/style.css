@@ -8,7 +8,7 @@ body {
 
 header {
   grid-column: 2 / span 6;
-  background-color: #f8f9fa;
+  background-color: #4CAF50; /* Add your desired color */
   padding: 10px;
   text-align: center;
 }
@@ -20,11 +20,12 @@ main {
   gap: 0; 
   padding: 0; 
   height: 100vh; 
+  background-color: #FFFFFF; /* Add your desired color */
 }
 
 footer {
   grid-column: 2 / span 6;
-  background-color: #f8f9fa;
+  background-color: #4CAF50; /* Add your desired color */
   padding: 10px;
   text-align: center;
 }
