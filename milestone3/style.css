@@ -6,9 +6,10 @@ body {
 }
 
 #wrapper {
-    display: grid;
-    grid-auto-rows: minmax(0px, auto);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  display: grid;
+  grid-auto-rows: minmax(0px, auto);
+  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  height: 100%; /* Ensure the wrapper fills the available height */
 }
 
 .row {
@@ -27,4 +28,5 @@ header, footer {
   background-color: #4CAF50;
   padding: 10px;
   text-align: center;
+  flex-shrink: 0; /* Ensure header and footer do not shrink */
 }
