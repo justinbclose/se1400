@@ -15,10 +15,10 @@ body {
 
 #wrapper {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) 99px 500px 99px minmax(0px, 1fr); /* Adjusted column widths */
     grid-template-rows: repeat(6, auto); /* Adjusted to 6 rows to accommodate more boxes */
     gap: 0px; /* Optional: Add some space between the boxes */
-    padding: 10px;
+    padding: 0px;
     height: 100%; /* Ensure the wrapper fills the available height */
 }
 
@@ -51,18 +51,18 @@ footer {
     box-sizing: border-box;
     height: 200px; /* Increased height to make the boxes bigger */
 }
-.grid-item:nth-child(1) { background-color: rgba(0, 0, 255, 0.2); grid-column: 2 / 3; grid-row: 2; } /* Blue */
-.grid-item:nth-child(2) { background-color: rgba(0, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 2; } /* Green */
-.grid-item:nth-child(3) { background-color: rgba(0, 0, 255, 0.2); grid-column: 4 / 5; grid-row: 2; } /* Blue */
-.grid-item:nth-child(4) { background-color: rgba(255, 105, 180, 0.5); grid-column: 2 / 3; grid-row: 3; } /* Pink */
-.grid-item:nth-child(5) { background-color: rgba(255, 105, 180, 0.5); grid-column: 3 / 4; grid-row: 3; } /* Pink */
-.grid-item:nth-child(6) { background-color: rgba(255, 105, 180, 0.5); grid-column: 4 / 5; grid-row: 3; } /* Pink */
-.grid-item:nth-child(7) { background-color: rgba(255, 255, 255, 0.2); grid-column: 2 / 3; grid-row: 4; } /* White */
-.grid-item:nth-child(8) { background-color: rgba(255, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 4; } /* Yellow */
-.grid-item:nth-child(9) { background-color: rgba(255, 255, 255, 0.2); grid-column: 4 / 5; grid-row: 4; } /* White */
-.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); grid-column: 2 / 3; grid-row: 5; } /* Brown */
-.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); grid-column: 3 / 4; grid-row: 5; } /* Brown */
-.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); grid-column: 4 / 5; grid-row: 5; } /* Brown */
-.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); grid-column: 2 / 3; grid-row: 6; } /* Black */
-.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); grid-column: 3 / 4; grid-row: 6; } /* Black */
-.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); grid-column: 4 / 5; grid-row: 6; } /* Black */
+.grid-item:nth-child(1) { background-color: rgba(0, 0, 255, 0.2); grid-column: 2 / 3; grid-row: 2; height: 79px;} /* Blue */
+.grid-item:nth-child(2) { background-color: rgba(0, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 2; height: 79px;} /* Green */
+.grid-item:nth-child(3) { background-color: rgba(0, 0, 255, 0.2); grid-column: 4 / 5; grid-row: 2; height: 79px} /* Blue */
+.grid-item:nth-child(4) { background-color: rgba(255, 105, 180, 0.5); grid-column: 2 / 3; grid-row: 3; height: 159px} /* Pink */
+.grid-item:nth-child(5) { background-color: rgba(255, 105, 180, 0.5); grid-column: 3 / 4; grid-row: 3; height: 159px } /* Pink */
+.grid-item:nth-child(6) { background-color: rgba(255, 105, 180, 0.5); grid-column: 4 / 5; grid-row: 3; height: 159px} /* Pink */
+.grid-item:nth-child(7) { background-color: rgba(255, 255, 255, 0.2); grid-column: 2 / 3; grid-row: 4; height: 1123px}
+.grid-item:nth-child(8) { background-color: rgba(255, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 4; height: 1123px} /* Yellow */
+.grid-item:nth-child(9) { background-color: rgba(255, 255, 255, 0.2); grid-column: 4 / 5; grid-row: 4; height: 1123px } /* White */
+.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); grid-column: 2 / 3; grid-row: 5; height: 159px } /* Brown */
+.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); grid-column: 3 / 4; grid-row: 5; height: 159px} /* Brown */
+.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); grid-column: 4 / 5; grid-row: 5; height: 159px} /* Brown */
+.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); grid-column: 2 / 3; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); grid-column: 3 / 4; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); grid-column: 4 / 5; grid-row: 6; height: 99px} /* Black */
