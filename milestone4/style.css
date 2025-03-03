@@ -15,11 +15,11 @@ body {
 
 #wrapper {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) 99px 1000px 99px minmax(0px, 1fr); /* Adjusted column widths */
+    grid-template-columns: minmax(0px, 1fr) 99px 500px 99px minmax(0px, 1fr); /* Adjusted column widths */
     grid-template-rows: repeat(6, auto); /* Adjusted to 6 rows to accommodate more boxes */
     gap: 0px; /* Optional: Add some space between the boxes */
     padding: 0px;
-    height: 1000%; /* Ensure the wrapper fills the available height */
+    height: 100%; /* Ensure the wrapper fills the available height */
 }
 
 header {
@@ -51,9 +51,9 @@ footer {
     box-sizing: border-box;
     height: 200px; /* Increased height to make the boxes bigger */
 }
-.grid-item:nth-child(1) { background-color: rgba(0, 0, 255, 0.2); grid-column: 2 / 3; grid-row: 2; height: 79px;} /* Blue */
-.grid-item:nth-child(2) { background-color: rgba(0, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 2; height: 79px;} /* Green */
-.grid-item:nth-child(3) { background-color: rgba(0, 0, 255, 0.2); grid-column: 4 / 5; grid-row: 2; height: 79px} /* Blue */
+.grid-item:nth-child(1) { background-color: rgba(0, 0, 0, 0.8); grid-column: 2 / 3; grid-row: 2; height: 79px;} /* Blue */
+.grid-item:nth-child(2) { background-color: rgba(0, 0, 0, 0.8); grid-column: 3 / 4; grid-row: 2; height: 79px;} /* Green */
+.grid-item:nth-child(3) { background-color: rgba(0, 0, 0, 0.8); grid-column: 4 / 5; grid-row: 2; height: 79px} /* Blue */
 .grid-item:nth-child(4) { background-color: rgba(255, 105, 180, 0.5); grid-column: 2 / 3; grid-row: 3; height: 159px} /* Pink */
 .grid-item:nth-child(5) { background-color: rgba(255, 105, 180, 0.5); grid-column: 3 / 4; grid-row: 3; height: 159px } /* Pink */
 .grid-item:nth-child(6) { background-color: rgba(255, 105, 180, 0.5); grid-column: 4 / 5; grid-row: 3; height: 159px} /* Pink */
@@ -66,3 +66,15 @@ footer {
 .grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); grid-column: 2 / 3; grid-row: 6; height: 99px} /* Black */
 .grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); grid-column: 3 / 4; grid-row: 6; height: 99px} /* Black */
 .grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); grid-column: 4 / 5; grid-row: 6; height: 99px} /* Black */
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.corner-image {
+    margin-right: 10px; /* Adjust the margin as needed */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    float: left; /* Use float for additional content placement */
+}
