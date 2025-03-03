@@ -48,17 +48,15 @@ header h1 {
 
 nav {
     background-color: #424242;
-    position: sticky;
-    top: 0;
-    padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Center the nav bar */
+    width: fit-content; /* Adjust width to content */
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: center; /* Center items within the nav bar */
+    padding: 0;
+    margin: 0;
     list-style-type: none;
 }
 
