@@ -15,7 +15,7 @@ body {
 
 #wrapper {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) 99px 500px 99px minmax(0px, 1fr); /* Adjusted column widths */
+    grid-template-columns: minmax(0px, 1fr) 99px 1000px 99px minmax(0px, 1fr); /* Adjusted column widths */
     grid-template-rows: repeat(6, auto); /* Adjusted to 6 rows to accommodate more boxes */
     gap: 0px; /* Optional: Add some space between the boxes */
     padding: 0px;
