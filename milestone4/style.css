@@ -19,7 +19,7 @@ body {
     grid-template-rows: repeat(6, auto); /* Adjusted to 6 rows to accommodate more boxes */
     gap: 0px; /* Optional: Add some space between the boxes */
     padding: 0px;
-    height: 100%; /* Ensure the wrapper fills the available height */
+    height: 1000%; /* Ensure the wrapper fills the available height */
 }
 
 header {
