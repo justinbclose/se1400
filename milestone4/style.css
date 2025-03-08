@@ -57,15 +57,15 @@ footer {
 .grid-item:nth-child(4) { grid-area: merged-area; } /* Pink */
 .grid-item:nth-child(5) { grid-area: merged-area; } /* Pink */
 .grid-item:nth-child(6) { grid-area: merged-area; } /* Pink */
-.grid-item:nth-child(7) { background-color: rgba(255, 255, 255, 0.2); grid-column: 2 / 3; grid-row: 4; height: 200px} /* White */
-.grid-item:nth-child(8) { background-color: rgba(255, 255, 0, 0.2); grid-column: 3 / 4; grid-row: 4; height: 200px} /* Yellow */
-.grid-item:nth-child(9) { background-color: rgba(255, 255, 255, 0.2); grid-column: 4 / 5; grid-row: 4; height: 200px } /* White */
-.grid-item:nth-child(10) { background-color: rgba(139, 69, 19, 0.2); grid-column: 2 / 3; grid-row: 5; height: 159px } /* Brown */
-.grid-item:nth-child(11) { background-color: rgba(139, 69, 19, 0.2); grid-column: 3 / 4; grid-row: 5; height: 159px} /* Brown */
-.grid-item:nth-child(12) { background-color: rgba(139, 69, 19, 0.2); grid-column: 4 / 5; grid-row: 5; height: 159px} /* Brown */
-.grid-item:nth-child(13) { background-color: rgba(0, 0, 0, 0.2); grid-column: 2 / 3; grid-row: 6; height: 99px} /* Black */
-.grid-item:nth-child(14) { background-color: rgba(0, 0, 0, 0.22); grid-column: 3 / 4; grid-row: 6; height: 99px} /* Black */
-.grid-item:nth-child(15) { background-color: rgba(0, 0, 0, 0.2); grid-column: 4 / 5; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(7) { background-color: rgba(0, 0, 0, 0.0); grid-column: 2 / 3; grid-row: 4; height: 1000px} /* White */
+.grid-item:nth-child(8) { background-color: rgba(0, 0, 0, 0.0); grid-column: 3 / 4; grid-row: 4; height: 1000px} /* Yellow */
+.grid-item:nth-child(9) { background-color: rgba(0, 0, 0, 0.0); grid-column: 4 / 5; grid-row: 4; height: 1000px } /* White */
+.grid-item:nth-child(10) { background-color: rgba(0, 0, 0, 0.0); grid-column: 2 / 3; grid-row: 5; height: 50px } /* Brown */
+.grid-item:nth-child(11) { background-color: rgba(0, 0, 0, 0.0); grid-column: 3 / 4; grid-row: 5; height: 50px} /* Brown */
+.grid-item:nth-child(12) { background-color: rgba(0, 0, 0, 0.0); grid-column: 4 / 5; grid-row: 5; height: 50px} /* Brown */
+.grid-item:nth-child(13) { background-color: rgba(217, 217, 217, 1); grid-column: 2 / 3; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(14) { background-color: rgba(217, 217, 217, 1); grid-column: 3 / 4; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(15) { background-color: rgba(217, 217, 217, 1); grid-column: 4 / 5; grid-row: 6; height: 99px} /* Black */
 
 #merged-area {
     grid-column: 2 / 5;
@@ -87,11 +87,26 @@ footer {
 }
 
 #box {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     grid-row: 4;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    height: 200px; /* Match the height of child 9 */
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 800px; /* Set the width of the box */
+    height: 900px; /* Set the height of the box */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align the box to the top of the grid cell */
+    margin: 0 auto; /* Center the box horizontally within the grid cell */
     z-index: 1; /* Ensure the box is above the background area */
+}
+
+#inner-box {
+    background-color: rgba(81, 137, 140, 1); /* Semi-transparent black background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    position: ; /* Position the inner box absolutely */
+    top: 0; /* Align the inner box to the top */
+    left: 50%; /* Center the inner box horizontally */
+    transform: translateX(-33%); /* Adjust the position to center the inner box */
 }
 
 .content-wrapper {
@@ -118,10 +133,6 @@ footer {
     margin: 0px 22px; /* Adjust the margin as needed */
     font-family: 'Inter', sans-serif; /* Apply Inter font */
     font-size: 18px; /* Increase the font size */
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
 }
 
 .nav-links a:hover {
