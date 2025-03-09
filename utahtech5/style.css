@@ -208,8 +208,6 @@ dt {
     }
 
     #utahtechlogo {
-        width: 100px; /* Adjust the size as needed */
-        height: auto;
-        margin-top: 0.5rem;
+        display: none; /* Hide the logo on mobile */
     }
 }
