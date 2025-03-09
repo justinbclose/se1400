@@ -197,4 +197,19 @@ dt {
     #homehero, #studenthero, #facultyhero {
         display: none;
     }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    #utahtechlogo {
+        width: 100px; /* Adjust the size as needed */
+        height: auto;
+        margin-top: 0.5rem;
+    }
 }
