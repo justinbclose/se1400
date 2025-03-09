@@ -199,15 +199,12 @@ dt {
     }
 
     .header-content {
-        flex-direction: column;
-        align-items: center;
+        background-image: none; /* Hide the background image on small screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
 
     .header-content h1 {
-        margin-bottom: 0.5rem;
-    }
-
-    #utahtechlogo {
-        display: none; /* Hide the logo on mobile */
+        margin-bottom: 0.5rem; /* Add some space below the header */
     }
 }
