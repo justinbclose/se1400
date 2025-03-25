@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) 99px 1000px 99px minmax(0px, 1fr); /* Adjusted column widths */
+    grid-template-rows: auto 79px auto auto auto auto auto; /* Adjusted to accommodate more rows */
+    gap: 0px; /* Optional: Add some space between the boxes */
+    padding: 0px;
+    height: 100%; /* Ensure the wrapper fills the available height */
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 200px; /* Increased height to make the boxes bigger */
+}
+.grid-item:nth-child(1) { background-color: rgba(0, 0, 0, 0.8); grid-column: 2 / 3; grid-row: 2; height: 79px;} /* Blue */
+.grid-item:nth-child(2) { background-color: rgba(0, 0, 0, 0.8); grid-column: 3 / 4; grid-row: 2; height: 79px;} /* Green */
+.grid-item:nth-child(3) { background-color: rgba(0, 0, 0, 0.8); grid-column: 4 / 5; grid-row: 2; height: 79px} /* Blue */
+.grid-item:nth-child(4) { grid-area: merged-area; } /* Pink */
+.grid-item:nth-child(5) { grid-area: merged-area; } /* Pink */
+.grid-item:nth-child(6) { grid-area: merged-area; } /* Pink */
+.grid-item:nth-child(7) { background-color: rgba(0, 0, 0, 0.0); grid-column: 2 / 3; grid-row: 4; height: 1000px} /* White */
+.grid-item:nth-child(8) { background-color: rgba(0, 0, 0, 0.0); grid-column: 3 / 4; grid-row: 4; height: 1000px} /* Yellow */
+.grid-item:nth-child(9) { background-color: rgba(0, 0, 0, 0.0); grid-column: 4 / 5; grid-row: 4; height: 1000px } /* White */
+.grid-item:nth-child(10) { background-color: rgba(0, 0, 0, 0.0); grid-column: 2 / 3; grid-row: 5; height: 50px } /* Brown */
+.grid-item:nth-child(11) { background-color: rgba(0, 0, 0, 0.0); grid-column: 3 / 4; grid-row: 5; height: 50px} /* Brown */
+.grid-item:nth-child(12) { background-color: rgba(0, 0, 0, 0.0); grid-column: 4 / 5; grid-row: 5; height: 50px} /* Brown */
+.grid-item:nth-child(13) { background-color: rgba(217, 217, 217, 1); grid-column: 2 / 3; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(14) { background-color: rgba(217, 217, 217, 1); grid-column: 3 / 4; grid-row: 6; height: 99px} /* Black */
+.grid-item:nth-child(15) { background-color: rgba(217, 217, 217, 1); grid-column: 4 / 5; grid-row: 6; height: 99px} /* Black */
+
+#merged-area {
+    grid-column: 2 / 5;
+    grid-row: 3;
+    background: url('dog.jpg') no-repeat center center;
+    background-size: cover;
+    height: 490px;
+}
+
+#background-area {
+    grid-column: 2 / 5;
+    grid-row: 4 / 6; /* Adjusted to span only rows 4 and 5 */
+    background: url('paper.jpeg') no-repeat center center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index: -1; /* Ensure the background area is behind other content */
+}
+
+#box {
+    grid-column: 3 / 4;
+    grid-row: 4;
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 800px; /* Set the width of the box */
+    height: 900px; /* Adjust the height based on content */
+    position: relative; /* Ensure the inner boxes are positioned relative to this box */
+    margin: 0 auto; /* Center the box horizontally within the grid cell */
+    z-index: 1; /* Ensure the box is above the background area */
+    padding-bottom: 40px; /* Add some padding at the bottom */
+}
+
+#inner-box {
+    background-color: rgba(81, 137, 140, 1); /* Semi-transparent black background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: white; /* Set the text color to white */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 20px; /* Set the font size */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-bottom: 10px; /* Add some space below the inner box */
+}
+
+#inner-box-2 {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: -10px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+}
+
+#wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18px; /* Set the font size */
+    padding-left: 25px; /* Align the text with the inner boxes */
+    margin-top: -27px; /* Reduce space above the wrapped text */
+}
+
+#floating-image {
+    width: 225px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image to make it longer */
+    float: left; /* Float the image to the left */
+    margin-top: 10px; /* Add some space above the image */
+    padding-left: 25px; /* Align the image with the inner boxes */
+    padding-right:-10px;
+}
+#bottom-right-image {
+    width: 200px; /* Set the width of the image */
+    height: 250px; /* Maintain aspect ratio */
+    float: right; /* Float the image to the right */
+    margin-top: -180px; /* Move the image up */
+    margin-right: 25px; /* Add some space to the right of the image */
+    padding-right: 60px;
+}
+
+#promo-video {
+    width: 318px; /* Set the width of the video */
+    height: 200px; /* Set the height of the video */
+    float: right; /* Float the video to the right */
+    margin-top: -96px; /* Add some space above the video */
+    margin-right: 0px; /* Add some space to the right of the video */
+}
+
+
+#new-inner-box {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: 20px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+    clear: both; /* Ensure the box is below the floating image */
+    padding-top: 20px;
+}
+
+#new-wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18.5px; /* Set the font size */
+    padding-left: 25px; /* Align the text with the inner boxes */
+    margin-top: -15px; /* Add some space above the wrapped text */
+    clear: both; /* Ensure the text is below the floating image */
+}
+
+
+#right-inner-box {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: -25px; /* Adjust the padding to move the text to the left */
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: 10px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+    float: right; /* Float the box to the right */
+    margin-left: -60px;
+    margin-right: 50px;
+}
+
+#right-wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18.5px; /* Set the font size */
+    padding-left: -35px; /* Adjust the padding to move the text to the left */
+    margin-top: -27px; /* Add some space above the wrapped text */
+    float: right; /* Float the text to the right */
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #424242;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 20px; /* Add some space above the textarea */
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.corner-image {
+    margin-right: 10px; /* Adjust the margin as needed */
+    width: 110px; /* Adjust the width as needed */
+    height: 79px; /* Adjust the height as needed */
+    float: left; /* Use float for additional content placement */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.nav-links a {
+    color: rgb(200, 200, 200); /* Set the color to rgb(29, 32, 32) */
+    text-decoration: none;
+    margin: 0px 22px; /* Adjust the margin as needed */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 18px; /* Increase the font size */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#contact-us {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    padding: 10px;
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 18px; /* Set the font size */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    text-align: left; /* Align the text to the left */
+}
+
+#contact-us strong {
+    font-weight: bold; /* Make the "Contact Us" text bold */
+}
+
+font-weight: bold; /* Make the "Contact Us" text bold */
+}
+
+
+/* Existing styles... */
+
+/* Media query for viewports less than 992px */
+#contact-us {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    padding: 10px;
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 18px; /* Set the font size */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    text-align: left; /* Align the text to the left */
+}
+
+#contact-us strong {
+    font-weight: bold; /* Make the "Contact Us" text bold */
+}
+
+
+
+
+/* Media query for viewports less than 992px */
+@media (max-width: 992px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 768px) 1fr; /* Set center column to 768px */
+    }
+
+    /* Add other styles for viewports less than 992px */
+}
+
+/* Media query for viewports less than 768px */
+@media (max-width: 768px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr; /* Set center column to 100% wide */
+    }
+
+    /* Add other styles for viewports less than 768px */
+}
