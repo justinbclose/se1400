@@ -36,14 +36,6 @@ header h1 {
     margin: 0;
 }
 
-footer {
-    background-color: #4CAF50;
-    padding: 10px;
-    text-align: center;
-    flex-shrink: 0; /* Ensure footer does not shrink */
-    grid-column: 1 / -1; /* Make footer span all columns */
-}
-
 .grid-item {
     background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
     padding: 0px;
@@ -70,7 +62,7 @@ footer {
 #merged-area {
     grid-column: 2 / 5;
     grid-row: 3;
-    background: url('maindog.jpg') no-repeat center center;
+    background: url('dog.jpg') no-repeat center center;
     background-size: cover;
     height: 490px;
 }
@@ -91,22 +83,108 @@ footer {
     grid-row: 4;
     background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
     width: 800px; /* Set the width of the box */
-    height: 900px; /* Set the height of the box */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align the box to the top of the grid cell */
+    height: auto; /* Adjust the height based on content */
+    position: relative; /* Ensure the inner boxes are positioned relative to this box */
     margin: 0 auto; /* Center the box horizontally within the grid cell */
     z-index: 1; /* Ensure the box is above the background area */
+    padding-bottom: 20px; /* Add some padding at the bottom */
 }
 
 #inner-box {
     background-color: rgba(81, 137, 140, 1); /* Semi-transparent black background */
     width: 482px; /* Set the width of the inner box */
     height: 75px; /* Set the height of the inner box */
-    position: ; /* Position the inner box absolutely */
-    top: 0; /* Align the inner box to the top */
-    left: 50%; /* Center the inner box horizontally */
-    transform: translateX(-33%); /* Adjust the position to center the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: white; /* Set the text color to white */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 20px; /* Set the font size */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-bottom: 10px; /* Add some space below the inner box */
+}
+
+#inner-box-2 {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: -10px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+}
+
+#wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18px; /* Set the font size */
+    padding-left: 25px; /* Align the text with the inner boxes */
+    margin-top: -27px; /* Reduce space above the wrapped text */
+}
+
+#floating-image {
+    width: 225px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image to make it longer */
+    float: left; /* Float the image to the left */
+    margin-top: 10px; /* Add some space above the image */
+    padding-left: 25px; /* Align the image with the inner boxes */
+    padding-right:-10px;
+}
+
+#right-inner-box {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: -25px; /* Adjust the padding to move the text to the left */
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: 10px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+    float: right; /* Float the box to the right */
+    margin-left: -60px;
+    margin-right: 50px;
+}
+
+#right-wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18.5px; /* Set the font size */
+    padding-left: -35px; /* Adjust the padding to move the text to the left */
+    margin-top: -27px; /* Add some space above the wrapped text */
+    float: right; /* Float the text to the right */
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #424242;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 20px; /* Add some space above the textarea */
 }
 
 .content-wrapper {
@@ -128,7 +206,7 @@ footer {
 }
 
 .nav-links a {
-    color: rgb(29, 32, 32); /* Set the color to rgb(29, 32, 32) */
+    color: rgb(200, 200, 200); /* Set the color to rgb(29, 32, 32) */
     text-decoration: none;
     margin: 0px 22px; /* Adjust the margin as needed */
     font-family: 'Inter', sans-serif; /* Apply Inter font */
