@@ -83,11 +83,11 @@ header h1 {
     grid-row: 4;
     background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
     width: 800px; /* Set the width of the box */
-    height: auto; /* Adjust the height based on content */
+    height: 900px; /* Adjust the height based on content */
     position: relative; /* Ensure the inner boxes are positioned relative to this box */
     margin: 0 auto; /* Center the box horizontally within the grid cell */
     z-index: 1; /* Ensure the box is above the background area */
-    padding-bottom: 20px; /* Add some padding at the bottom */
+    padding-bottom: 40px; /* Add some padding at the bottom */
 }
 
 #inner-box {
@@ -142,6 +142,55 @@ header h1 {
     padding-left: 25px; /* Align the image with the inner boxes */
     padding-right:-10px;
 }
+#bottom-right-image {
+    width: 200px; /* Set the width of the image */
+    height: 250px; /* Maintain aspect ratio */
+    float: right; /* Float the image to the right */
+    margin-top: -180px; /* Move the image up */
+    margin-right: 25px; /* Add some space to the right of the image */
+    padding-right: 60px;
+}
+
+#promo-video {
+    width: 318px; /* Set the width of the video */
+    height: 200px; /* Set the height of the video */
+    float: right; /* Float the video to the right */
+    margin-top: -96px; /* Add some space above the video */
+    margin-right: 0px; /* Add some space to the right of the video */
+}
+
+
+#new-inner-box {
+    background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
+    width: 482px; /* Set the width of the inner box */
+    height: 75px; /* Set the height of the inner box */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align the text to the left */
+    align-items: center; /* Center the text vertically */
+    text-align: left; /* Align the text to the left */
+    color: rgb(0, 0, 0); /* Set the text color to black */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-size: 22px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    padding-left: 25px;
+    z-index: 2; /* Ensure the inner box is above the outer box */
+    margin-top: 20px; /* Add some space above the inner box */
+    margin-bottom: 5px; /* Reduce space below the inner box */
+    clear: both; /* Ensure the box is below the floating image */
+    padding-top: 20px;
+}
+
+#new-wrapped-text {
+    width: 482px; /* Match the width of the inner boxes */
+    color: rgb(77, 76, 76); /* Set the text color */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-weight: lighter;
+    font-size: 18.5px; /* Set the font size */
+    padding-left: 25px; /* Align the text with the inner boxes */
+    margin-top: -15px; /* Add some space above the wrapped text */
+    clear: both; /* Ensure the text is below the floating image */
+}
+
 
 #right-inner-box {
     background-color: rgba(217, 217, 217, 1); /* Semi-transparent gray background */
