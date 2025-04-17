@@ -3,8 +3,9 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    overflow-x: hidden;
     background: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
     color: #666666;
@@ -12,6 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
 }
 
 /* --- Grid Wrapper Layout --- */
@@ -100,6 +103,10 @@ header h1 {
     z-index: 1;
     padding-bottom: 40px;
 }
+
+/* --- Remaining styles unchanged --- */
+/* ... (rest of the CSS remains exactly as is) ... */
+
 
 /* --- Inner Content Elements --- */
 #inner-box,
