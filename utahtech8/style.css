@@ -113,7 +113,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #BA1C21;
+    background-color: #ffffff; /* Change this to your desired color */
+    color: #ffffff; /* Ensure the text color is still visible */
 }
 
 #homehero, #studenthero, #facultyhero, #alumnihero{
@@ -189,9 +190,9 @@ video {
 }
 nav a {
     transition: background-color 0.5s ease-out;
-    
+}
 nav a:hover {
-    background-color: #4e4c4c; /* Example hover background color */
+    background-color: #BA1C21; /* Example hover background color */
 }
 
 @media only screen and (max-width: 1100px) {
